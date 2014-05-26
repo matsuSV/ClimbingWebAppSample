@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.beginningee6.book</groupId>
+    <artifactId>chapter10</artifactId>
+    <packaging>war</packaging>
+    <version>2.0</version>
+    <name>Chapter 10 - JSF</name>
+
+    <properties>
+        <derby-version>10.10.1.1</derby-version>
+        <eclipselink-version>2.0.1</eclipselink-version>
+        <javax.persistence-version>2.0.0</javax.persistence-version>
+        <glassfish-version>3.0.1-b19</glassfish-version>
+        <grizzly-version>1.8.6.3</grizzly-version>
+        <jaxb-version>2.1.10</jaxb-version>
+        <jaxws-version>2.2</jaxws-version>
+        <jaxrs-version>1.1.1</jaxrs-version>
+        <jersey-version>1.2</jersey-version>
+        <jsf-version>2.0</jsf-version>
+        <jsr250-version>1.0</jsr250-version>
+        <junit-version>4.8.1</junit-version>
+        <plugin-jar-version>2.2</plugin-jar-version>
+        <plugin-war-version>2.1-alpha-2</plugin-war-version>
+        <plugin-maven-processor>1.3.5</plugin-maven-processor>
+        <xmlunit-version>1.2</xmlunit-version>
+    </properties>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.eclipse.persistence</groupId>
+            <artifactId>javax.persistence</artifactId>
+            <version>${javax.persistence-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.persistence</groupId>
+            <artifactId>eclipselink</artifactId>
+            <version>${eclipselink-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.faces</groupId>
+            <artifactId>jsf-api</artifactId>
+            <version>${jsf-version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish</groupId>
+            <artifactId>javax.ejb</artifactId>
+            <version>${glassfish-version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+</project>
