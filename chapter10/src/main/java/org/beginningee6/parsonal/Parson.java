@@ -2,27 +2,42 @@ package org.beginningee6.parsonal;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToOne;
 
 @Entity
+@NamedQuery(name = "findAllParsons", query = "SELECT p FROM Parson p")
 public class Parson {
 
 	/*
 	 * ID
 	 */
 	@Id
-	Long id;
+	private Long id;
 
 	/*
 	 * Name
 	 */
-	String name;
+	private String name;
 
 	/*
 	 * 記録
 	 */
 	@OneToOne
-	Recode recode;
+	private Recode recode;
+	
+	public Parson() {
+	}
+	
+	
+	public Parson(Long id,
+					String name,
+					Recode recode) {
+		
+		this.id = id;
+		this.name = name;
+		this.recode = recode;
+	}
 
 	public Long getId() {
 		return id;
@@ -47,6 +62,4 @@ public class Parson {
 	public void setRecode(Recode recode) {
 		this.recode = recode;
 	}
-
-
 }
