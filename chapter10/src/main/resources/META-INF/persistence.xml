@@ -6,11 +6,10 @@
 
 	<persistence-unit name="chapter10PU" transaction-type="JTA">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<!-- 
 		<class>org.beginningee6.book.chapter10.Book</class>
+		 -->
 		<class>org.beginningee6.parsonal.parson</class>
-		<class>org.beginningee6.parsonal.recode</class>
-		<class>org.beginningee6.parsonal.firstclass</class>
-		<class>org.beginningee6.parsonal.firstgrade</class>
 
 		<properties>
 			<property name="eclipselink.target-database" value="DERBY" />

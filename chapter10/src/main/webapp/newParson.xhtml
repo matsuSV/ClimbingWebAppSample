@@ -10,26 +10,14 @@
     <hr/>
     <h:form>
         <h:panelGrid columns="2" >
-            <h:outputLabel value="ISBN : "/>
-            <h:inputText value="#{bookController.book.isbn}"/>
+            <h:outputLabel value="ID : "/>
+            <h:inputText value="#{parsonController.parson.id}"/>
 
-            <h:outputLabel value="Title :"/>
-            <h:inputText value="#{bookController.book.title}"/>
-
-            <h:outputLabel value="Price : "/>
-            <h:inputText value="#{bookController.book.price}"/>
-
-            <h:outputLabel value="Description  : "/>
-            <h:inputTextarea value="#{bookController.book.description}" cols="20" rows="5"/>
-
-            <h:outputLabel value="Number of pages : "/>
-            <h:inputText value="#{bookController.book.nbOfPage}"/>
-
-            <h:outputLabel value="Illustrations : "/>
-            <h:selectBooleanCheckbox value="#{bookController.book.illustrations}"/>
+            <h:outputLabel value="Name :"/>
+            <h:inputText value="#{parsonController.parson.name}"/>
 
         </h:panelGrid>
-        <h:commandButton value="Create a book" action="#{bookController.doCreateBook}"/>
+        <h:commandButton value="Create a parson" action="#{parsonController.doCreateParson}"/>
 
     </h:form>
     <hr/>

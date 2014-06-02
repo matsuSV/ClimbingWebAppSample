@@ -14,7 +14,7 @@ public class ParsonEJB {
 	private EntityManager em;
 
 	public List<Parson> findParsons() {
-		TypedQuery<Parson> query = em.createNamedQuery("findAllBooks", Parson.class);
+		TypedQuery<Parson> query = em.createNamedQuery("findAllParsons", Parson.class);
 		return query.getResultList();
 	}
 
