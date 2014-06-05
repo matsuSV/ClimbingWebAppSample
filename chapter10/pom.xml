@@ -9,7 +9,7 @@
     <name>Chapter 10 - JSF</name>
 
     <properties>
-        <eclipselink-version>2.0.0</eclipselink-version>
+        <eclipselink-version>2.0.1</eclipselink-version>
         <javax.persistence-version>2.0.0</javax.persistence-version>
         <glassfish-version>3.0.1-b19</glassfish-version>
         <jsf-version>2.0</jsf-version>
