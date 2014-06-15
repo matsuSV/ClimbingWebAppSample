@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+    <title>Login Page</title>
+</h:head>
+<h:body>
+    <h1>Login on the Site</h1>
+    <hr/>
+    <h:form>
+        <h:panelGrid columns="2" >
+            <h:outputLabel value="ID : "/>
+            <h:inputText value="#{loginController.id}"/>
+
+            <h:outputLabel value="Name :"/>
+            <h:inputText value="#{loginController.name}"/>
+
+        </h:panelGrid>
+        <h:commandButton value="Create a parson" action="#{loginController.findLoginParson}"/>
+
+    </h:form>
+    <hr/>
+    <i>APress - Beginning Java EE 6</i>
+
+</h:body>
+</html>
